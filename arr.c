@@ -1,4 +1,4 @@
-#include<stdio.h>
+/* #include<stdio.h>
 int main(){
     int n,i=0;
     scanf("%d",&n);
@@ -19,4 +19,17 @@ int main(){
      printf("%d",max);
      printf("%d",min);
      return 0;
+}*/
+
+ #include <stdio.h>
+ int main(){
+    int n; scanf("%d",&n);
+    int arr[n];
+    for(int i=0;i<n;i++) scanf("%d",&arr[i]);
+    int l=0, r=n-1;
+    while(l<r){
+        printf("%d %d ", arr[l++], arr[r--]);
+    }
+    if(l==r) printf("%d", arr[l]);
+    return 0;
 }
